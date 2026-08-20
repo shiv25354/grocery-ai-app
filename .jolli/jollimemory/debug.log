@@ -347,3 +347,73 @@
 [2026-08-20T09:03:16.817Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
 [2026-08-20T09:03:22.773Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, worktreeHooks=true, sessions=2, summaries=3, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=true/true, cursor=false/true, copilot=false/true, copilotChat=true, cline=false/undefined
 [2026-08-20T09:03:25.045Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:16:37.390Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-08-20T09:16:37.649Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-08-20T09:16:38.974Z] INFO  [PostCommitHook] [trace=f74b7b78efbdea063bc5f9c44428d787] Detected operation: commit
+[2026-08-20T09:16:39.525Z] INFO  [PostCommitHook] [trace=f74b7b78efbdea063bc5f9c44428d787] Enqueued: type=commit hash=be6d29f7
+[2026-08-20T09:16:39.525Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Launching background worker
+[2026-08-20T09:16:39.538Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Background worker spawned (PID: 2024)
+[2026-08-20T09:16:39.557Z] INFO  [EnsureGlobalDaemon] [trace=f74b7b78efbdea063bc5f9c44428d787] spawned global daemon ensure helper (pid 10776)
+[2026-08-20T09:16:40.736Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] === Queue worker started === node=22.14.0 kind=vscode-plugin source=vscode pkgVer=0.99.13 cliVer=0.99.13 dist=c:\Users\thisi\.vscode\extensions\jolli.jollimemory-vscode-0.99.13\dist
+[2026-08-20T09:16:40.751Z] INFO  [StorageFactory] [trace=f74b7b78efbdea063bc5f9c44428d787] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:16:41.902Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Processing queue entry: type=commit hash=be6d29f7
+[2026-08-20T09:16:42.139Z] INFO  [GitOps] [trace=f74b7b78efbdea063bc5f9c44428d787] Commit be6d29f7: Configure localtunnel backend URL
+[2026-08-20T09:16:42.140Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Commit: be6d29f7 - Configure localtunnel backend URL (228ms)
+[2026-08-20T09:16:42.156Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Discovered 2 OpenCode session(s)
+[2026-08-20T09:16:42.311Z] INFO  [OpenCodeTranscriptReader] [trace=f74b7b78efbdea063bc5f9c44428d787] Read OpenCode session ses_fe28: 0 new messages, 0 entries extracted (index 26→26)
+[2026-08-20T09:16:42.399Z] INFO  [OpenCodeTranscriptReader] [trace=f74b7b78efbdea063bc5f9c44428d787] Read OpenCode session ses_fe27: 0 new messages, 0 entries extracted (index 158→158)
+[2026-08-20T09:16:42.732Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Git diff: 6 files changed, +138 -3 (332ms)
+[2026-08-20T09:16:43.089Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-08-20T09:16:43.092Z] INFO  [Summarizer] [trace=f74b7b78efbdea063bc5f9c44428d787] Generating summary for commit be6d29f7
+[2026-08-20T09:16:43.092Z] INFO  [Summarizer] [trace=f74b7b78efbdea063bc5f9c44428d787] Context: transcript=0, files=6, lines=138+3
+[2026-08-20T09:16:43.092Z] INFO  [LlmClient] [trace=f74b7b78efbdea063bc5f9c44428d787] LLM call: action=summarize source=jolli-proxy
+[2026-08-20T09:16:43.094Z] INFO  [LlmClient] [trace=f74b7b78efbdea063bc5f9c44428d787] Proxy LLM call: action=summarize url=https://jolli.ai/api/push/llm/complete
+[2026-08-20T09:16:49.477Z] INFO  [LlmClient] [trace=f74b7b78efbdea063bc5f9c44428d787] Proxy LLM response: action=summarize latency=6380ms
+[2026-08-20T09:16:49.478Z] INFO  [Summarizer] [trace=f74b7b78efbdea063bc5f9c44428d787] No ===TOPIC=== sections in LLM response -- returning empty topics
+[2026-08-20T09:16:49.478Z] INFO  [Summarizer] [trace=f74b7b78efbdea063bc5f9c44428d787] Summary parsed: 0 topic(s), response length: 13 chars
+[2026-08-20T09:16:49.478Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] API summary generated (6.4s)
+[2026-08-20T09:16:49.481Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Plan registry scan: found 0 uncommitted slug(s) on main: []
+[2026-08-20T09:16:49.482Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Plan association: detected 0 slug(s) from transcripts: []
+[2026-08-20T09:16:49.482Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Note registry scan: found 0 uncommitted note(s) on main: []
+[2026-08-20T09:16:49.482Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Note association: detected 0 note(s): []
+[2026-08-20T09:16:49.483Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Reference association: detected 0 ref(s) for branch main
+[2026-08-20T09:16:49.488Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Summary built for be6d29f7: recap=no, topics=0, plans=absent, notes=absent, references=absent
+[2026-08-20T09:16:49.899Z] INFO  [MetadataManager] [trace=f74b7b78efbdea063bc5f9c44428d787] Manifest updated: main/configure-localtunnel-backend-url-be6d29f7.md (commit)
+[2026-08-20T09:16:49.899Z] INFO  [FolderStorage] [trace=f74b7b78efbdea063bc5f9c44428d787] Markdown generated: main/configure-localtunnel-backend-url-be6d29f7.md
+[2026-08-20T09:16:49.905Z] INFO  [FolderStorage] [trace=f74b7b78efbdea063bc5f9c44428d787] Wrote 3 files, deleted 0 (Add summary for be6d29f7: Configure localtunnel backend URL)
+[2026-08-20T09:16:49.905Z] INFO  [SummaryStore] [trace=f74b7b78efbdea063bc5f9c44428d787] Summary stored successfully for commit be6d29f7
+[2026-08-20T09:16:49.924Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Summary stored successfully for commit be6d29f7 (436ms, 0 plans, 0 notes, 0 references)
+[2026-08-20T09:16:49.925Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] === Pipeline completed in 8.0s ===
+[2026-08-20T09:16:49.925Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] === Summary content (0 topics) ===
+[2026-08-20T09:16:49.936Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] Processed 1 queue entries
+[2026-08-20T09:16:49.937Z] INFO  [PushExecutor] [trace=f74b7b78efbdea063bc5f9c44428d787] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-08-20T09:16:51.549Z] INFO  [GitOps] [trace=f74b7b78efbdea063bc5f9c44428d787] Commit be6d29f7: Configure localtunnel backend URL
+[2026-08-20T09:16:52.142Z] INFO  [StorageFactory] [trace=f74b7b78efbdea063bc5f9c44428d787] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:16:53.787Z] ERROR [Backup] [trace=f74b7b78efbdea063bc5f9c44428d787] the default backup folder C:\Users\thisi\jolli_back is inside a git worktree (git clean -xdf would delete the snapshots) — set backupFolder to a path outside it
+[2026-08-20T09:16:53.802Z] INFO  [QueueWorker] [trace=f74b7b78efbdea063bc5f9c44428d787] === Queue worker finished ===
+[2026-08-20T09:16:53.806Z] INFO  [SessionStartHook] [trace=f74b7b78efbdea063bc5f9c44428d787] Briefing cache not warmed — nothing to brief on this branch
+[2026-08-20T09:16:53.969Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-20T09:16:53.969Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-20T09:16:53.969Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-20T09:16:53.969Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-20T09:16:54.167Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_fe28: 0 new messages, 0 entries extracted (index 26→26)
+[2026-08-20T09:16:54.186Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_fe27: 0 new messages, 0 entries extracted (index 158→158)
+[2026-08-20T09:17:02.068Z] INFO  [PrePushHook] [trace=eec01955d47e4921b9801f2683c38841] pre-push hook: remote=origin budget=3000ms
+[2026-08-20T09:17:02.359Z] INFO  [PushPendingStore] [trace=eec01955d47e4921b9801f2683c38841] Enqueued 1 new push-pending entries (branch=main)
+[2026-08-20T09:17:02.363Z] INFO  [PrePushHook] [trace=eec01955d47e4921b9801f2683c38841] pre-push: recorded 1 commit(s) across 1 pushed ref(s)
+[2026-08-20T09:17:02.564Z] INFO  [PrePushHook] [trace=eec01955d47e4921b9801f2683c38841] pre-push: worker spawned (pushId=eec01955d47e4921b9801f2683c38841) — watching for 2489ms
+[2026-08-20T09:17:02.705Z] INFO  [PushExecutor] [trace=eec01955d47e4921b9801f2683c38841] processPushPending(pre-push): 1 pending entr(ies) (filtered to 1 hash(es))
+[2026-08-20T09:17:02.975Z] INFO  [PushExecutor] [trace=eec01955d47e4921b9801f2683c38841] processPushPending(pre-push): claimed 1/1 candidate(s)
+[2026-08-20T09:17:03.447Z] INFO  [StorageFactory] [trace=eec01955d47e4921b9801f2683c38841] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:17:04.545Z] INFO  [PushExecutor] [trace=eec01955d47e4921b9801f2683c38841] processPushPending(pre-push): triage — withMemory=1 noMemory=0 mergedChildren=0
+[2026-08-20T09:17:05.166Z] INFO  [PrePushHook] [trace=eec01955d47e4921b9801f2683c38841] pre-push: watch timed out — 0 of 1 settled
+[2026-08-20T09:17:06.718Z] INFO  [PushExecutor] [trace=eec01955d47e4921b9801f2683c38841] processPushPending(pre-push): pushing 1 commit(s)
+[2026-08-20T09:17:09.746Z] INFO  [MetadataManager] [trace=eec01955d47e4921b9801f2683c38841] Manifest updated: main/configure-localtunnel-backend-url-be6d29f7.md (commit)
+[2026-08-20T09:17:09.746Z] INFO  [FolderStorage] [trace=eec01955d47e4921b9801f2683c38841] Markdown generated: main/configure-localtunnel-backend-url-be6d29f7.md
+[2026-08-20T09:17:09.752Z] INFO  [FolderStorage] [trace=eec01955d47e4921b9801f2683c38841] Wrote 3 files, deleted 0 (Overwrite summary for be6d29f7: Configure localtunnel backend URL)
+[2026-08-20T09:17:09.753Z] INFO  [SummaryStore] [trace=eec01955d47e4921b9801f2683c38841] Summary stored successfully for commit be6d29f7
+[2026-08-20T09:17:10.022Z] INFO  [PushExecutor] [trace=eec01955d47e4921b9801f2683c38841] processPushPending(pre-push): pushed=1 failed=0
+[2026-08-20T09:17:10.022Z] INFO  [PrePushWorker] [trace=eec01955d47e4921b9801f2683c38841] PrePushWorker(pre-push): drain done — pushed=1 failed=0 noMemory=0
+[2026-08-20T09:17:10.030Z] INFO  [PrePushWorker] [trace=eec01955d47e4921b9801f2683c38841] PrePushWorker(pre-push): confirmed tail pass — pushed=0 failed=0 (no pending entries)
+[2026-08-20T09:17:11.086Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T09:17:12.634Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
