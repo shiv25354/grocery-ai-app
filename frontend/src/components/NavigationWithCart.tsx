@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Mic, PackageCheck, Truck, User, ShoppingCart, X } from "lucide-react";
+import { Mic, PackageCheck, Truck, User, X } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 
 const navItems = [
@@ -15,7 +15,7 @@ const navItems = [
 
 export default function NavigationWithCart() {
   const pathname = usePathname();
-  const { cartCount, cartTotal, isCartOpen, setIsCartOpen } = useCart();
+  const { isCartOpen, setIsCartOpen } = useCart();
 
   const getActiveTab = (path: string) => {
     if (path === "/") return "voice";
@@ -51,19 +51,6 @@ export default function NavigationWithCart() {
           ))}
         </div>
       </nav>
-
-      {cartCount > 0 && (
-        <button
-          onClick={() => setIsCartOpen(true)}
-          className="fixed bottom-20 right-4 max-w-md mx-auto z-30 bg-emerald-600 text-white px-4 py-2.5 rounded-full shadow-lg shadow-emerald-600/30 flex items-center gap-2 text-sm font-semibold transition-all hover:bg-emerald-500 active:scale-[0.98] touch-target"
-          aria-label={`View cart with ${cartCount} items`}
-        >
-          <ShoppingCart className="w-4 h-4" />
-          <span>View Bag</span>
-          <span className="bg-white/20 px-2 py-0.5 rounded-full text-xs">{cartCount}</span>
-          <span className="text-xs">₹{cartTotal}</span>
-        </button>
-      )}
 
       <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
     </>

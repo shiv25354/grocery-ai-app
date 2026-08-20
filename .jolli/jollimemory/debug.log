@@ -417,3 +417,85 @@
 [2026-08-20T09:17:10.030Z] INFO  [PrePushWorker] [trace=eec01955d47e4921b9801f2683c38841] PrePushWorker(pre-push): confirmed tail pass — pushed=0 failed=0 (no pending entries)
 [2026-08-20T09:17:11.086Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
 [2026-08-20T09:17:12.634Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T09:22:39.466Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-08-20T09:22:39.704Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-08-20T09:22:41.098Z] INFO  [PostCommitHook] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Detected operation: commit
+[2026-08-20T09:22:41.619Z] INFO  [PostCommitHook] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Enqueued: type=commit hash=47154a63
+[2026-08-20T09:22:41.619Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Launching background worker
+[2026-08-20T09:22:41.740Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Background worker spawned (PID: 3964)
+[2026-08-20T09:22:41.820Z] INFO  [EnsureGlobalDaemon] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] spawned global daemon ensure helper (pid 12260)
+[2026-08-20T09:22:42.664Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] === Queue worker started === node=22.14.0 kind=vscode-plugin source=vscode pkgVer=0.99.13 cliVer=0.99.13 dist=c:\Users\thisi\.vscode\extensions\jolli.jollimemory-vscode-0.99.13\dist
+[2026-08-20T09:22:42.677Z] INFO  [StorageFactory] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:22:43.747Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Processing queue entry: type=commit hash=47154a63
+[2026-08-20T09:22:43.902Z] INFO  [GitOps] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Commit 47154a63: Update backend IP to 10.120.133.170
+[2026-08-20T09:22:43.902Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Commit: 47154a63 - Update backend IP to 10.120.133.170 (147ms)
+[2026-08-20T09:22:43.916Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Discovered 2 OpenCode session(s)
+[2026-08-20T09:22:44.000Z] INFO  [OpenCodeTranscriptReader] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Read OpenCode session ses_fe28: 0 new messages, 0 entries extracted (index 26→26)
+[2026-08-20T09:22:44.082Z] INFO  [OpenCodeTranscriptReader] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Read OpenCode session ses_fe27: 0 new messages, 0 entries extracted (index 158→158)
+[2026-08-20T09:22:44.456Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Git diff: 6 files changed, +81 -3 (373ms)
+[2026-08-20T09:22:44.792Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-08-20T09:22:44.794Z] INFO  [Summarizer] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Generating summary for commit 47154a63
+[2026-08-20T09:22:44.794Z] INFO  [Summarizer] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Context: transcript=0, files=6, lines=81+3
+[2026-08-20T09:22:44.794Z] INFO  [LlmClient] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] LLM call: action=summarize source=jolli-proxy
+[2026-08-20T09:22:44.795Z] INFO  [LlmClient] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Proxy LLM call: action=summarize url=https://jolli.ai/api/push/llm/complete
+[2026-08-20T09:22:50.737Z] INFO  [LlmClient] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Proxy LLM response: action=summarize latency=5939ms
+[2026-08-20T09:22:50.738Z] INFO  [Summarizer] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] No ===TOPIC=== sections in LLM response -- returning empty topics
+[2026-08-20T09:22:50.738Z] INFO  [Summarizer] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Summary parsed: 0 topic(s), response length: 13 chars
+[2026-08-20T09:22:50.738Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] API summary generated (5.9s)
+[2026-08-20T09:22:50.741Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Plan registry scan: found 0 uncommitted slug(s) on main: []
+[2026-08-20T09:22:50.742Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Plan association: detected 0 slug(s) from transcripts: []
+[2026-08-20T09:22:50.742Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Note registry scan: found 0 uncommitted note(s) on main: []
+[2026-08-20T09:22:50.743Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Note association: detected 0 note(s): []
+[2026-08-20T09:22:50.744Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Reference association: detected 0 ref(s) for branch main
+[2026-08-20T09:22:50.750Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Summary built for 47154a63: recap=no, topics=0, plans=absent, notes=absent, references=absent
+[2026-08-20T09:22:51.169Z] INFO  [MetadataManager] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Manifest updated: main/update-backend-ip-to-10120133170-47154a63.md (commit)
+[2026-08-20T09:22:51.169Z] INFO  [FolderStorage] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Markdown generated: main/update-backend-ip-to-10120133170-47154a63.md
+[2026-08-20T09:22:51.174Z] INFO  [FolderStorage] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Wrote 3 files, deleted 0 (Add summary for 47154a63: Update backend IP to 10.120.133.170)
+[2026-08-20T09:22:51.175Z] INFO  [SummaryStore] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Summary stored successfully for commit 47154a63
+[2026-08-20T09:22:51.282Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Summary stored successfully for commit 47154a63 (532ms, 0 plans, 0 notes, 0 references)
+[2026-08-20T09:22:51.285Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] === Pipeline completed in 7.5s ===
+[2026-08-20T09:22:51.285Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] === Summary content (0 topics) ===
+[2026-08-20T09:22:51.295Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Processed 1 queue entries
+[2026-08-20T09:22:51.297Z] INFO  [PushExecutor] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-08-20T09:22:52.989Z] INFO  [GitOps] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Commit 47154a63: Update backend IP to 10.120.133.170
+[2026-08-20T09:22:53.474Z] INFO  [StorageFactory] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:22:55.465Z] ERROR [Backup] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] the default backup folder C:\Users\thisi\jolli_back is inside a git worktree (git clean -xdf would delete the snapshots) — set backupFolder to a path outside it
+[2026-08-20T09:22:55.485Z] INFO  [QueueWorker] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] === Queue worker finished ===
+[2026-08-20T09:22:55.488Z] INFO  [SessionStartHook] [trace=88a4fc25f0378fd19f08a7f2d9fc8bc8] Briefing cache not warmed — nothing to brief on this branch
+[2026-08-20T09:22:55.668Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-20T09:22:55.668Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-20T09:22:55.668Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-20T09:22:55.669Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-20T09:22:55.896Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_fe28: 0 new messages, 0 entries extracted (index 26→26)
+[2026-08-20T09:22:55.920Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_fe27: 0 new messages, 0 entries extracted (index 158→158)
+[2026-08-20T09:23:00.312Z] INFO  [PrePushHook] [trace=31fc09de5985e5542a249973bf81cbb7] pre-push hook: remote=origin budget=3000ms
+[2026-08-20T09:23:00.530Z] INFO  [PushPendingStore] [trace=31fc09de5985e5542a249973bf81cbb7] Enqueued 1 new push-pending entries (branch=main)
+[2026-08-20T09:23:00.534Z] INFO  [PrePushHook] [trace=31fc09de5985e5542a249973bf81cbb7] pre-push: recorded 1 commit(s) across 1 pushed ref(s)
+[2026-08-20T09:23:00.743Z] INFO  [PrePushHook] [trace=31fc09de5985e5542a249973bf81cbb7] pre-push: worker spawned (pushId=31fc09de5985e5542a249973bf81cbb7) — watching for 2556ms
+[2026-08-20T09:23:00.893Z] INFO  [PushExecutor] [trace=31fc09de5985e5542a249973bf81cbb7] processPushPending(pre-push): 1 pending entr(ies) (filtered to 1 hash(es))
+[2026-08-20T09:23:01.126Z] INFO  [PushExecutor] [trace=31fc09de5985e5542a249973bf81cbb7] processPushPending(pre-push): claimed 1/1 candidate(s)
+[2026-08-20T09:23:01.436Z] INFO  [StorageFactory] [trace=31fc09de5985e5542a249973bf81cbb7] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:23:02.458Z] INFO  [PushExecutor] [trace=31fc09de5985e5542a249973bf81cbb7] processPushPending(pre-push): triage — withMemory=1 noMemory=0 mergedChildren=0
+[2026-08-20T09:23:03.395Z] INFO  [PrePushHook] [trace=31fc09de5985e5542a249973bf81cbb7] pre-push: watch timed out — 0 of 1 settled
+[2026-08-20T09:23:04.462Z] INFO  [PushExecutor] [trace=31fc09de5985e5542a249973bf81cbb7] processPushPending(pre-push): pushing 1 commit(s)
+[2026-08-20T09:23:07.297Z] INFO  [MetadataManager] [trace=31fc09de5985e5542a249973bf81cbb7] Manifest updated: main/update-backend-ip-to-10120133170-47154a63.md (commit)
+[2026-08-20T09:23:07.297Z] INFO  [FolderStorage] [trace=31fc09de5985e5542a249973bf81cbb7] Markdown generated: main/update-backend-ip-to-10120133170-47154a63.md
+[2026-08-20T09:23:07.302Z] INFO  [FolderStorage] [trace=31fc09de5985e5542a249973bf81cbb7] Wrote 3 files, deleted 0 (Overwrite summary for 47154a63: Update backend IP to 10.120.133.170)
+[2026-08-20T09:23:07.302Z] INFO  [SummaryStore] [trace=31fc09de5985e5542a249973bf81cbb7] Summary stored successfully for commit 47154a63
+[2026-08-20T09:23:07.526Z] INFO  [PushExecutor] [trace=31fc09de5985e5542a249973bf81cbb7] processPushPending(pre-push): pushed=1 failed=0
+[2026-08-20T09:23:07.526Z] INFO  [PrePushWorker] [trace=31fc09de5985e5542a249973bf81cbb7] PrePushWorker(pre-push): drain done — pushed=1 failed=0 noMemory=0
+[2026-08-20T09:23:07.532Z] INFO  [PrePushWorker] [trace=31fc09de5985e5542a249973bf81cbb7] PrePushWorker(pre-push): confirmed tail pass — pushed=0 failed=0 (no pending entries)
+[2026-08-20T09:23:08.506Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T09:31:31.611Z] INFO  [McpProxy] [trace=e24279cc3ce0d9b148bab46d3cfbb5b8] Spawned MCP daemon (pid 3436) for C:/Users/thisi/Desktop/grocery-ai-backend
+[2026-08-20T09:31:32.950Z] INFO  [SkillAutoRefresh] [trace=f45db992846e3fa4c9babac512967794] Refreshed Jolli skills at C:\Users\thisi\Desktop\grocery-ai-backend for version 0.99.13
+[2026-08-20T09:31:34.571Z] INFO  [StorageFactory] [trace=f45db992846e3fa4c9babac512967794] StorageFactory.create: route=cutover, projectPath=C:/Users/thisi/Desktop/grocery-ai-backend
+[2026-08-20T09:31:40.285Z] INFO  [McpServer] [trace=f45db992846e3fa4c9babac512967794] MCP runtime ready: 10/10 built-in (insideRepo=true) + 23 platform tool(s), gate=open, manifest=ok
+[2026-08-20T09:31:40.289Z] INFO  [McpDaemon] [trace=f45db992846e3fa4c9babac512967794] MCP daemon listening on \\.\pipe\jolli-mcp-dfa97828ee33c136 (cwd=C:/Users/thisi/Desktop/grocery-ai-backend, version=0.99.13)
+[2026-08-20T09:31:40.389Z] INFO  [McpProxy] [trace=e24279cc3ce0d9b148bab46d3cfbb5b8] Attached to MCP daemon 3436 (v0.99.13) for C:/Users/thisi/Desktop/grocery-ai-backend
+[2026-08-20T09:32:41.562Z] INFO  [McpProxy] [trace=8d28355c233f41acd42b7e24870364b6] Attached to MCP daemon 3436 (v0.99.13) for C:/Users/thisi/Desktop/grocery-ai-backend
+[2026-08-20T09:36:44.249Z] INFO  [McpProxy] [trace=10d9a2b7d9b0d74c8a57feac1e935eb0] Attached to MCP daemon 3436 (v0.99.13) for C:/Users/thisi/Desktop/grocery-ai-backend
+[2026-08-20T09:37:36.285Z] INFO  [McpProxy] [trace=8e2ddf366a5fb5712f2e1e5b0c234620] Attached to MCP daemon 3436 (v0.99.13) for C:/Users/thisi/Desktop/grocery-ai-backend
+[2026-08-20T09:38:44.683Z] INFO  [McpProxy] [trace=8808b4eb4d67edf6de0fc629d43659ac] Attached to MCP daemon 3436 (v0.99.13) for C:/Users/thisi/Desktop/grocery-ai-backend
+[2026-08-20T09:44:10.814Z] INFO  [McpProxy] [trace=857559c41d4d892956915d0988e83255] Attached to MCP daemon 3436 (v0.99.13) for C:/Users/thisi/Desktop/grocery-ai-backend
+[2026-08-20T09:47:28.433Z] INFO  [McpProxy] [trace=9c9c1d41fe50fa9e722f90a1b416f631] Attached to MCP daemon 3436 (v0.99.13) for C:/Users/thisi/Desktop/grocery-ai-backend
+[2026-08-20T09:48:37.437Z] INFO  [McpProxy] [trace=a4c96550a7c577c2a9c845217966b0e4] Attached to MCP daemon 3436 (v0.99.13) for C:/Users/thisi/Desktop/grocery-ai-backend

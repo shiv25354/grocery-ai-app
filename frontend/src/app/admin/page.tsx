@@ -15,7 +15,7 @@ import {
   Volume2,
   VolumeX
 } from "lucide-react";
-import axios from "axios";
+import api from "@/lib/api";
 
 interface OrderItem {
   product_id?: string;
@@ -68,7 +68,7 @@ export default function AdminDashboard() {
 
   const fetchOrders = async () => {
     try {
-      const res = await axios.get("http://127.0.0.1:8000/api/v1/orders/all");
+      const res = await api.get("/api/v1/orders/all");
       if (res.data.orders) {
         const fetched: Order[] = res.data.orders;
         
@@ -98,7 +98,7 @@ export default function AdminDashboard() {
     );
 
     try {
-      await axios.patch(`http://127.0.0.1:8000/api/v1/orders/${orderId}/status`, {
+      await api.patch(`/api/v1/orders/${orderId}/status`, {
         status: nextStatus,
       });
     } catch (err) {

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Mic, MicOff, Loader2, Send } from "lucide-react";
-import axios from "axios";
+import api from "@/lib/api";
 
 interface SpeechRecognitionConstructor {
   new (): SpeechRecognition;
@@ -72,7 +72,7 @@ export default function VoiceAssistant({ onItemsExtracted }: VoiceAssistantProps
     setFeedback(`Processing: "${text}"...`);
 
     try {
-      const res = await axios.post<VoiceResponse>("http://127.0.0.1:8000/api/v1/voice/process-voice", {
+      const res = await api.post<VoiceResponse>("/api/v1/voice/process-voice", {
         transcript: text,
       });
 
