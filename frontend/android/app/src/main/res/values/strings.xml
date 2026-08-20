@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">quicksetu</string>
+    <string name="title_activity_main">quicksetu</string>
+    <string name="package_name">com.quicksetu.app</string>
+    <string name="custom_url_scheme">com.quicksetu.app</string>
+</resources>
