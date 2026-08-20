@@ -220,3 +220,130 @@
 [2026-08-20T08:45:22.306Z] INFO  [PrePushWorker] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] PrePushWorker(pre-push): drain done — pushed=1 failed=0 noMemory=0
 [2026-08-20T08:45:22.384Z] INFO  [PrePushWorker] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] PrePushWorker(pre-push): confirmed tail pass — pushed=0 failed=0 (no pending entries)
 [2026-08-20T08:45:23.928Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T08:50:20.146Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-08-20T08:50:20.382Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-08-20T08:50:22.138Z] INFO  [PostCommitHook] [trace=3850c4c993326dcd8fb00045d8a6a27b] Detected operation: commit
+[2026-08-20T08:50:22.664Z] INFO  [PostCommitHook] [trace=3850c4c993326dcd8fb00045d8a6a27b] Enqueued: type=commit hash=747b5e53
+[2026-08-20T08:50:22.665Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Launching background worker
+[2026-08-20T08:50:22.677Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Background worker spawned (PID: 16476)
+[2026-08-20T08:50:22.693Z] INFO  [EnsureGlobalDaemon] [trace=3850c4c993326dcd8fb00045d8a6a27b] spawned global daemon ensure helper (pid 1896)
+[2026-08-20T08:50:23.567Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] === Queue worker started === node=22.14.0 kind=vscode-plugin source=vscode pkgVer=0.99.13 cliVer=0.99.13 dist=c:\Users\thisi\.vscode\extensions\jolli.jollimemory-vscode-0.99.13\dist
+[2026-08-20T08:50:23.583Z] INFO  [StorageFactory] [trace=3850c4c993326dcd8fb00045d8a6a27b] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T08:50:24.818Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Processing queue entry: type=commit hash=747b5e53
+[2026-08-20T08:50:25.052Z] INFO  [GitOps] [trace=3850c4c993326dcd8fb00045d8a6a27b] Commit 747b5e53: Upgrade to Java 21 and configure Android SDK setup
+[2026-08-20T08:50:25.053Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Commit: 747b5e53 - Upgrade to Java 21 and configure Android SDK setup (226ms)
+[2026-08-20T08:50:25.072Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Discovered 2 OpenCode session(s)
+[2026-08-20T08:50:25.219Z] INFO  [OpenCodeTranscriptReader] [trace=3850c4c993326dcd8fb00045d8a6a27b] Read OpenCode session ses_fe28: 0 new messages, 0 entries extracted (index 26→26)
+[2026-08-20T08:50:25.336Z] INFO  [OpenCodeTranscriptReader] [trace=3850c4c993326dcd8fb00045d8a6a27b] Read OpenCode session ses_fe27: 0 new messages, 0 entries extracted (index 158→158)
+[2026-08-20T08:50:25.832Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Git diff: 8 files changed, +93 -7 (495ms)
+[2026-08-20T08:50:26.266Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-08-20T08:50:26.269Z] INFO  [Summarizer] [trace=3850c4c993326dcd8fb00045d8a6a27b] Generating summary for commit 747b5e53
+[2026-08-20T08:50:26.269Z] INFO  [Summarizer] [trace=3850c4c993326dcd8fb00045d8a6a27b] Context: transcript=0, files=8, lines=93+7
+[2026-08-20T08:50:26.270Z] INFO  [LlmClient] [trace=3850c4c993326dcd8fb00045d8a6a27b] LLM call: action=summarize source=jolli-proxy
+[2026-08-20T08:50:26.271Z] INFO  [LlmClient] [trace=3850c4c993326dcd8fb00045d8a6a27b] Proxy LLM call: action=summarize url=https://jolli.ai/api/push/llm/complete
+[2026-08-20T08:50:37.865Z] INFO  [LlmClient] [trace=3850c4c993326dcd8fb00045d8a6a27b] Proxy LLM response: action=summarize latency=11589ms
+[2026-08-20T08:50:37.869Z] INFO  [Summarizer] [trace=3850c4c993326dcd8fb00045d8a6a27b] Parsed 1 topic(s) from delimited text format
+[2026-08-20T08:50:37.870Z] INFO  [Summarizer] [trace=3850c4c993326dcd8fb00045d8a6a27b] Summary parsed: 1 topic(s), response length: 1861 chars
+[2026-08-20T08:50:37.870Z] INFO  [Summarizer] [trace=3850c4c993326dcd8fb00045d8a6a27b]   Topic 1: Upgrade Android build pipeline to Java 21 with Android SDK setup
+[2026-08-20T08:50:37.870Z] INFO  [Summarizer] [trace=3850c4c993326dcd8fb00045d8a6a27b] Recap (501 chars): The Android app build pipeline was upgraded to use a newer Java runtime and now explicitly installs the Android SDK as p
+[2026-08-20T08:50:37.871Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] API summary generated (11.6s)
+[2026-08-20T08:50:37.875Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Plan registry scan: found 0 uncommitted slug(s) on main: []
+[2026-08-20T08:50:37.876Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Plan association: detected 0 slug(s) from transcripts: []
+[2026-08-20T08:50:37.876Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Note registry scan: found 0 uncommitted note(s) on main: []
+[2026-08-20T08:50:37.877Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Note association: detected 0 note(s): []
+[2026-08-20T08:50:37.878Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Reference association: detected 0 ref(s) for branch main
+[2026-08-20T08:50:37.888Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Summary built for 747b5e53: recap=yes, topics=1, plans=absent, notes=absent, references=absent
+[2026-08-20T08:50:38.341Z] INFO  [MetadataManager] [trace=3850c4c993326dcd8fb00045d8a6a27b] Manifest updated: main/upgrade-to-java-21-and-configure-android-sdk-setup-747b5e53.md (commit)
+[2026-08-20T08:50:38.341Z] INFO  [FolderStorage] [trace=3850c4c993326dcd8fb00045d8a6a27b] Markdown generated: main/upgrade-to-java-21-and-configure-android-sdk-setup-747b5e53.md
+[2026-08-20T08:50:38.346Z] INFO  [FolderStorage] [trace=3850c4c993326dcd8fb00045d8a6a27b] Wrote 3 files, deleted 0 (Add summary for 747b5e53: Upgrade to Java 21 and configure Android SDK setup)
+[2026-08-20T08:50:38.346Z] INFO  [SummaryStore] [trace=3850c4c993326dcd8fb00045d8a6a27b] Summary stored successfully for commit 747b5e53
+[2026-08-20T08:50:38.364Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Summary stored successfully for commit 747b5e53 (476ms, 0 plans, 0 notes, 0 references)
+[2026-08-20T08:50:38.365Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] === Pipeline completed in 13.5s ===
+[2026-08-20T08:50:38.365Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] === Summary content (1 topics) ===
+[2026-08-20T08:50:38.365Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Topic: Upgrade Android build pipeline to Java 21 with Android SDK setup
+[2026-08-20T08:50:38.365Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b]   Trigger:   The automated Android app build was likely failing or at risk of failing because it needed a newer Java version and proper Android SDK tooling to complete successfully.
+[2026-08-20T08:50:38.365Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b]   Response:  - Updated the GitHub Actions workflow (build-apk.yml) to install Java Development Kit 21 (Zulu distribution) instead of version 17 for the Android build job.
+- Added a new step to install the Android SDK using the android-actions/setup-android action, ensuring the build environment has the tools needed to compile the Android app.
+- Modified the Gradle build command to run with the no-daemon flag in addition to stacktrace, which changes how the build process runs in the CI environment.
+[2026-08-20T08:50:38.365Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b]   Decisions: - **Jumped to Java 21 instead of an intermediate version**: The build environment was upgraded directly to a newer Java release to meet compatibility requirements, avoiding the need for a later follow-up upgrade.
+- **Added explicit Android SDK setup**: Rather than relying on an implicit or pre-installed SDK environment, the workflow now explicitly provisions the Android SDK, making the build more reliable and reproducible across CI runs.
+[2026-08-20T08:50:38.373Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] Processed 1 queue entries
+[2026-08-20T08:50:38.374Z] INFO  [PushExecutor] [trace=3850c4c993326dcd8fb00045d8a6a27b] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-08-20T08:50:40.109Z] INFO  [GitOps] [trace=3850c4c993326dcd8fb00045d8a6a27b] Commit 747b5e53: Upgrade to Java 21 and configure Android SDK setup
+[2026-08-20T08:50:40.552Z] INFO  [StorageFactory] [trace=3850c4c993326dcd8fb00045d8a6a27b] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T08:50:41.835Z] ERROR [Backup] [trace=3850c4c993326dcd8fb00045d8a6a27b] the default backup folder C:\Users\thisi\jolli_back is inside a git worktree (git clean -xdf would delete the snapshots) — set backupFolder to a path outside it
+[2026-08-20T08:50:41.848Z] INFO  [QueueWorker] [trace=3850c4c993326dcd8fb00045d8a6a27b] === Queue worker finished ===
+[2026-08-20T08:50:41.852Z] INFO  [SessionStartHook] [trace=3850c4c993326dcd8fb00045d8a6a27b] Briefing cache not warmed — nothing to brief on this branch
+[2026-08-20T08:50:42.055Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-20T08:50:42.055Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-20T08:50:42.055Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-20T08:50:42.055Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-20T08:50:42.255Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_fe28: 0 new messages, 0 entries extracted (index 26→26)
+[2026-08-20T08:50:42.275Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_fe27: 0 new messages, 0 entries extracted (index 158→158)
+[2026-08-20T08:50:47.475Z] INFO  [PrePushHook] [trace=f83e80bdecac07be9cbc7ad1fd457e73] pre-push hook: remote=origin budget=3000ms
+[2026-08-20T08:50:47.824Z] INFO  [PushPendingStore] [trace=f83e80bdecac07be9cbc7ad1fd457e73] Enqueued 1 new push-pending entries (branch=main)
+[2026-08-20T08:50:47.830Z] INFO  [PrePushHook] [trace=f83e80bdecac07be9cbc7ad1fd457e73] pre-push: recorded 1 commit(s) across 1 pushed ref(s)
+[2026-08-20T08:50:48.117Z] INFO  [PrePushHook] [trace=f83e80bdecac07be9cbc7ad1fd457e73] pre-push: worker spawned (pushId=f83e80bdecac07be9cbc7ad1fd457e73) — watching for 2346ms
+[2026-08-20T08:50:48.341Z] INFO  [PushExecutor] [trace=f83e80bdecac07be9cbc7ad1fd457e73] processPushPending(pre-push): 1 pending entr(ies) (filtered to 1 hash(es))
+[2026-08-20T08:50:48.661Z] INFO  [PushExecutor] [trace=f83e80bdecac07be9cbc7ad1fd457e73] processPushPending(pre-push): claimed 1/1 candidate(s)
+[2026-08-20T08:50:49.280Z] INFO  [StorageFactory] [trace=f83e80bdecac07be9cbc7ad1fd457e73] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T08:50:50.539Z] INFO  [PrePushHook] [trace=f83e80bdecac07be9cbc7ad1fd457e73] pre-push: watch timed out — 0 of 1 settled
+[2026-08-20T08:50:50.710Z] INFO  [PushExecutor] [trace=f83e80bdecac07be9cbc7ad1fd457e73] processPushPending(pre-push): triage — withMemory=1 noMemory=0 mergedChildren=0
+[2026-08-20T08:50:53.679Z] INFO  [PushExecutor] [trace=f83e80bdecac07be9cbc7ad1fd457e73] processPushPending(pre-push): pushing 1 commit(s)
+[2026-08-20T08:50:58.174Z] INFO  [MetadataManager] [trace=f83e80bdecac07be9cbc7ad1fd457e73] Manifest updated: main/upgrade-to-java-21-and-configure-android-sdk-setup-747b5e53.md (commit)
+[2026-08-20T08:50:58.174Z] INFO  [FolderStorage] [trace=f83e80bdecac07be9cbc7ad1fd457e73] Markdown generated: main/upgrade-to-java-21-and-configure-android-sdk-setup-747b5e53.md
+[2026-08-20T08:50:58.180Z] INFO  [FolderStorage] [trace=f83e80bdecac07be9cbc7ad1fd457e73] Wrote 3 files, deleted 0 (Overwrite summary for 747b5e53: Upgrade to Java 21 and configure Android SDK setup)
+[2026-08-20T08:50:58.180Z] INFO  [SummaryStore] [trace=f83e80bdecac07be9cbc7ad1fd457e73] Summary stored successfully for commit 747b5e53
+[2026-08-20T08:50:58.442Z] INFO  [PushExecutor] [trace=f83e80bdecac07be9cbc7ad1fd457e73] processPushPending(pre-push): pushed=1 failed=0
+[2026-08-20T08:50:58.442Z] INFO  [PrePushWorker] [trace=f83e80bdecac07be9cbc7ad1fd457e73] PrePushWorker(pre-push): drain done — pushed=1 failed=0 noMemory=0
+[2026-08-20T08:50:58.447Z] INFO  [PrePushWorker] [trace=f83e80bdecac07be9cbc7ad1fd457e73] PrePushWorker(pre-push): confirmed tail pass — pushed=0 failed=0 (no pending entries)
+[2026-08-20T08:50:59.720Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T09:01:58.042Z] INFO  [activate] Activating JolliMemory extension {"workspaceRoot":"c:\\Users\\thisi\\Desktop\\grocery-ai-backend","extensionPath":"c:\\Users\\thisi\\.vscode\\extensions\\jolli.jollimemory-vscode-0.99.13"}
+[2026-08-20T09:02:01.968Z] INFO  [initialLoad] Loading all panels
+[2026-08-20T09:02:34.500Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-20T09:02:34.501Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-20T09:02:34.501Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-20T09:02:34.501Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-20T09:02:36.952Z] INFO  [Sync:VsCodeBootstrap] Memory Bank sync engine built (auto-sync off — manual only)
+[2026-08-20T09:02:41.025Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:02:41.144Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T09:02:45.328Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-20T09:02:45.328Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-20T09:02:47.690Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:02:49.605Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T09:02:51.330Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:02:55.251Z] INFO  [SchemaV5Migration] Found 3 summary files to inspect
+[2026-08-20T09:02:55.277Z] INFO  [SchemaV5Migration] Reading 3 summaries...
+[2026-08-20T09:02:55.292Z] INFO  [SchemaV5Migration] Read 3 summaries in 15 ms
+[2026-08-20T09:02:55.293Z] INFO  [SchemaV5Migration] Writing 3 summary file(s) via active storage...
+[2026-08-20T09:02:55.352Z] INFO  [MetadataManager] Manifest updated: main/upgrade-to-node-22-for-capacitor-cli-compatibility-18d8c85b.md (commit)
+[2026-08-20T09:02:55.352Z] INFO  [FolderStorage] Markdown generated: main/upgrade-to-node-22-for-capacitor-cli-compatibility-18d8c85b.md
+[2026-08-20T09:02:55.362Z] INFO  [MetadataManager] Manifest updated: main/upgrade-to-java-21-and-configure-android-sdk-setup-747b5e53.md (commit)
+[2026-08-20T09:02:55.363Z] INFO  [FolderStorage] Markdown generated: main/upgrade-to-java-21-and-configure-android-sdk-setup-747b5e53.md
+[2026-08-20T09:02:55.393Z] INFO  [MetadataManager] Manifest updated: main/upgrade-to-node-20-and-fix-build-bd73b34b.md (commit)
+[2026-08-20T09:02:55.393Z] INFO  [FolderStorage] Markdown generated: main/upgrade-to-node-20-and-fix-build-bd73b34b.md
+[2026-08-20T09:02:55.393Z] INFO  [FolderStorage] Wrote 3 files, deleted 0 (Schema v5 migration: re-pushing 3 v5 summaries to heal storage shadow)
+[2026-08-20T09:02:55.425Z] INFO  [FolderStorage] Wrote 1 files, deleted 0 (Schema v5 migration: re-pushing 3 v5 summaries to heal storage shadow)
+[2026-08-20T09:02:55.425Z] INFO  [SchemaV5Migration] Schema v5 migration complete: 0 migrated, 3 skipped, fresh=false, recovery=true (took 132 ms)
+[2026-08-20T09:02:55.740Z] INFO  [activate] Schema v5 migration: alreadyDone=false fresh=false migrated=0 skipped=3
+[2026-08-20T09:02:58.246Z] INFO  [MigrationEngine] === Migration started ===
+[2026-08-20T09:02:58.333Z] INFO  [FolderStorage] Wrote 1 files, deleted 0 (Migration: copy index)
+[2026-08-20T09:02:58.336Z] INFO  [MigrationEngine] === Migration completed: 0 migrated, 3 skipped, 0 failed ===
+[2026-08-20T09:02:58.337Z] INFO  [MigrationEngine] === 0.99.2 head-regen (one-shot) started ===
+[2026-08-20T09:02:58.347Z] INFO  [MigrationEngine] Head regenerate: regenerated=3 skipped=0 failed=0
+[2026-08-20T09:02:58.348Z] INFO  [MigrationEngine] Stale-child sweep: deleted=0 failed=0
+[2026-08-20T09:02:58.351Z] INFO  [activate] KB auto-migration: completed (3/3)
+[2026-08-20T09:02:58.514Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, worktreeHooks=true, sessions=2, summaries=3, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=true/true, cursor=false/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-20T09:02:59.230Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, worktreeHooks=true, sessions=2, summaries=3, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=true/true, cursor=false/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-20T09:02:59.296Z] INFO  [initialLoad] All panels loaded — updating status bar
+[2026-08-20T09:02:59.314Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:03:01.007Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-20T09:03:01.007Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-20T09:03:01.046Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T09:03:14.198Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, worktreeHooks=true, sessions=2, summaries=3, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=true/true, cursor=false/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-20T09:03:14.417Z] INFO  [Installer] Checking Jolli Memory status
+[2026-08-20T09:03:16.244Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, worktreeHooks=true, sessions=2, summaries=3, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=true/true, cursor=false/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-20T09:03:16.361Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T09:03:16.817Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T09:03:22.773Z] INFO  [Installer] Status: enabled=true, claude=true, git=true, geminiHook=false, worktreeHooks=true, sessions=2, summaries=3, codex=false/undefined, gemini=false/undefined, enabledWorktrees=1, opencode=true/true, cursor=false/true, copilot=false/true, copilotChat=true, cline=false/undefined
+[2026-08-20T09:03:25.045Z] INFO  [StorageFactory] StorageFactory.create: route=cutover, projectPath=c:\Users\thisi\Desktop\grocery-ai-backend
