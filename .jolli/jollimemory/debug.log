@@ -146,3 +146,77 @@
 [2026-08-20T08:41:06.923Z] INFO  [PrePushWorker] [trace=8d532c0264aba12895475500f52c485f] PrePushWorker(pre-push): drain done — pushed=1 failed=0 noMemory=0
 [2026-08-20T08:41:06.929Z] INFO  [PrePushWorker] [trace=8d532c0264aba12895475500f52c485f] PrePushWorker(pre-push): confirmed tail pass — pushed=0 failed=0 (no pending entries)
 [2026-08-20T08:41:08.141Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
+[2026-08-20T08:44:47.145Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook started (source: message) ===
+[2026-08-20T08:44:47.430Z] INFO  [PrepareMsgHook] === Prepare-commit-msg hook finished ===
+[2026-08-20T08:44:49.574Z] INFO  [PostCommitHook] [trace=5653a70206ac2fa02718afbbcc58a2cb] Detected operation: commit
+[2026-08-20T08:44:50.222Z] INFO  [PostCommitHook] [trace=5653a70206ac2fa02718afbbcc58a2cb] Enqueued: type=commit hash=18d8c85b
+[2026-08-20T08:44:50.222Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Launching background worker
+[2026-08-20T08:44:50.237Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Background worker spawned (PID: 16744)
+[2026-08-20T08:44:50.256Z] INFO  [EnsureGlobalDaemon] [trace=5653a70206ac2fa02718afbbcc58a2cb] spawned global daemon ensure helper (pid 18312)
+[2026-08-20T08:44:51.269Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] === Queue worker started === node=22.14.0 kind=vscode-plugin source=vscode pkgVer=0.99.13 cliVer=0.99.13 dist=c:\Users\thisi\.vscode\extensions\jolli.jollimemory-vscode-0.99.13\dist
+[2026-08-20T08:44:51.284Z] INFO  [StorageFactory] [trace=5653a70206ac2fa02718afbbcc58a2cb] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T08:44:52.509Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Processing queue entry: type=commit hash=18d8c85b
+[2026-08-20T08:44:52.753Z] INFO  [GitOps] [trace=5653a70206ac2fa02718afbbcc58a2cb] Commit 18d8c85b: Upgrade to Node 22 for Capacitor CLI compatibility
+[2026-08-20T08:44:52.753Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Commit: 18d8c85b - Upgrade to Node 22 for Capacitor CLI compatibility (235ms)
+[2026-08-20T08:44:52.768Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Discovered 2 OpenCode session(s)
+[2026-08-20T08:44:53.219Z] INFO  [OpenCodeTranscriptReader] [trace=5653a70206ac2fa02718afbbcc58a2cb] Read OpenCode session ses_fe28: 0 new messages, 0 entries extracted (index 26→26)
+[2026-08-20T08:44:53.268Z] INFO  [OpenCodeTranscriptReader] [trace=5653a70206ac2fa02718afbbcc58a2cb] Read OpenCode session ses_fe27: 0 new messages, 0 entries extracted (index 158→158)
+[2026-08-20T08:44:53.737Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Git diff: 9 files changed, +152 -3 (467ms)
+[2026-08-20T08:44:54.221Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Prompt blocks: plans=0 notes=0 references=0 (+0 track-only archived, not prompted) (AI soft-excluded 0)
+[2026-08-20T08:44:54.224Z] INFO  [Summarizer] [trace=5653a70206ac2fa02718afbbcc58a2cb] Generating summary for commit 18d8c85b
+[2026-08-20T08:44:54.224Z] INFO  [Summarizer] [trace=5653a70206ac2fa02718afbbcc58a2cb] Context: transcript=0, files=9, lines=152+3
+[2026-08-20T08:44:54.225Z] INFO  [LlmClient] [trace=5653a70206ac2fa02718afbbcc58a2cb] LLM call: action=summarize source=jolli-proxy
+[2026-08-20T08:44:54.226Z] INFO  [LlmClient] [trace=5653a70206ac2fa02718afbbcc58a2cb] Proxy LLM call: action=summarize url=https://jolli.ai/api/push/llm/complete
+[2026-08-20T08:45:02.795Z] INFO  [LlmClient] [trace=5653a70206ac2fa02718afbbcc58a2cb] Proxy LLM response: action=summarize latency=8564ms
+[2026-08-20T08:45:02.800Z] INFO  [Summarizer] [trace=5653a70206ac2fa02718afbbcc58a2cb] Parsed 1 topic(s) from delimited text format
+[2026-08-20T08:45:02.800Z] INFO  [Summarizer] [trace=5653a70206ac2fa02718afbbcc58a2cb] Summary parsed: 1 topic(s), response length: 727 chars
+[2026-08-20T08:45:02.801Z] INFO  [Summarizer] [trace=5653a70206ac2fa02718afbbcc58a2cb]   Topic 1: Upgrade Android APK build workflow to Node 22
+[2026-08-20T08:45:02.801Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] API summary generated (8.6s)
+[2026-08-20T08:45:02.806Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Plan registry scan: found 0 uncommitted slug(s) on main: []
+[2026-08-20T08:45:02.806Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Plan association: detected 0 slug(s) from transcripts: []
+[2026-08-20T08:45:02.807Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Note registry scan: found 0 uncommitted note(s) on main: []
+[2026-08-20T08:45:02.807Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Note association: detected 0 note(s): []
+[2026-08-20T08:45:02.809Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Reference association: detected 0 ref(s) for branch main
+[2026-08-20T08:45:02.819Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Summary built for 18d8c85b: recap=no, topics=1, plans=absent, notes=absent, references=absent
+[2026-08-20T08:45:03.325Z] INFO  [MetadataManager] [trace=5653a70206ac2fa02718afbbcc58a2cb] Manifest updated: main/upgrade-to-node-22-for-capacitor-cli-compatibility-18d8c85b.md (commit)
+[2026-08-20T08:45:03.325Z] INFO  [FolderStorage] [trace=5653a70206ac2fa02718afbbcc58a2cb] Markdown generated: main/upgrade-to-node-22-for-capacitor-cli-compatibility-18d8c85b.md
+[2026-08-20T08:45:03.330Z] INFO  [FolderStorage] [trace=5653a70206ac2fa02718afbbcc58a2cb] Wrote 3 files, deleted 0 (Add summary for 18d8c85b: Upgrade to Node 22 for Capacitor CLI compatibility)
+[2026-08-20T08:45:03.331Z] INFO  [SummaryStore] [trace=5653a70206ac2fa02718afbbcc58a2cb] Summary stored successfully for commit 18d8c85b
+[2026-08-20T08:45:03.351Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Summary stored successfully for commit 18d8c85b (533ms, 0 plans, 0 notes, 0 references)
+[2026-08-20T08:45:03.354Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] === Pipeline completed in 10.8s ===
+[2026-08-20T08:45:03.354Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] === Summary content (1 topics) ===
+[2026-08-20T08:45:03.354Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Topic: Upgrade Android APK build workflow to Node 22
+[2026-08-20T08:45:03.354Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb]   Trigger:   The Android app build pipeline needed a newer version of Node.js to remain compatible with the Capacitor command-line tooling used to package the app.
+[2026-08-20T08:45:03.354Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb]   Response:  - Updated the GitHub Actions workflow file for building the Android APK to install and use Node 22 instead of Node 20 during the CI run.
+[2026-08-20T08:45:03.354Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb]   Decisions: The build environment was bumped directly to Node 22 to match the version required by the Capacitor CLI, avoiding intermediate compatibility issues that could arise from staying on an older runtime.
+[2026-08-20T08:45:03.363Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] Processed 1 queue entries
+[2026-08-20T08:45:03.365Z] INFO  [PushExecutor] [trace=5653a70206ac2fa02718afbbcc58a2cb] Post-queue push trigger: scheduling drain for 1 newly generated summar(ies)
+[2026-08-20T08:45:04.747Z] INFO  [GitOps] [trace=5653a70206ac2fa02718afbbcc58a2cb] Commit 18d8c85b: Upgrade to Node 22 for Capacitor CLI compatibility
+[2026-08-20T08:45:05.133Z] INFO  [StorageFactory] [trace=5653a70206ac2fa02718afbbcc58a2cb] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T08:45:06.693Z] ERROR [Backup] [trace=5653a70206ac2fa02718afbbcc58a2cb] the default backup folder C:\Users\thisi\jolli_back is inside a git worktree (git clean -xdf would delete the snapshots) — set backupFolder to a path outside it
+[2026-08-20T08:45:06.706Z] INFO  [QueueWorker] [trace=5653a70206ac2fa02718afbbcc58a2cb] === Queue worker finished ===
+[2026-08-20T08:45:06.709Z] INFO  [SessionStartHook] [trace=5653a70206ac2fa02718afbbcc58a2cb] Briefing cache not warmed — nothing to brief on this branch
+[2026-08-20T08:45:06.905Z] INFO  [PlanService] detectPlans found 0 plans (0 in registry)
+[2026-08-20T08:45:06.905Z] INFO  [NoteService] detectNotes found 0 notes (0 in registry)
+[2026-08-20T08:45:06.905Z] INFO  [SkillProjection] projectActiveSkills: 0 active (0 in registry)
+[2026-08-20T08:45:06.905Z] INFO  [references] detectReferences(*) found 0 (0 in registry)
+[2026-08-20T08:45:07.275Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_fe27: 0 new messages, 0 entries extracted (index 158→158)
+[2026-08-20T08:45:07.285Z] INFO  [OpenCodeTranscriptReader] Read OpenCode session ses_fe28: 0 new messages, 0 entries extracted (index 26→26)
+[2026-08-20T08:45:12.203Z] INFO  [PrePushHook] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] pre-push hook: remote=origin budget=3000ms
+[2026-08-20T08:45:12.453Z] INFO  [PushPendingStore] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] Enqueued 1 new push-pending entries (branch=main)
+[2026-08-20T08:45:12.457Z] INFO  [PrePushHook] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] pre-push: recorded 1 commit(s) across 1 pushed ref(s)
+[2026-08-20T08:45:12.658Z] INFO  [PrePushHook] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] pre-push: worker spawned (pushId=4ffc3cca6e32afcd1144fa90a08e7e8c) — watching for 2529ms
+[2026-08-20T08:45:12.794Z] INFO  [PushExecutor] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] processPushPending(pre-push): 1 pending entr(ies) (filtered to 1 hash(es))
+[2026-08-20T08:45:13.004Z] INFO  [PushExecutor] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] processPushPending(pre-push): claimed 1/1 candidate(s)
+[2026-08-20T08:45:13.473Z] INFO  [StorageFactory] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] StorageFactory.create: route=cutover, projectPath=C:\Users\thisi\Desktop\grocery-ai-backend
+[2026-08-20T08:45:14.659Z] INFO  [PushExecutor] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] processPushPending(pre-push): triage — withMemory=1 noMemory=0 mergedChildren=0
+[2026-08-20T08:45:15.205Z] INFO  [PrePushHook] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] pre-push: watch timed out — 0 of 1 settled
+[2026-08-20T08:45:17.316Z] INFO  [PushExecutor] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] processPushPending(pre-push): pushing 1 commit(s)
+[2026-08-20T08:45:21.603Z] INFO  [MetadataManager] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] Manifest updated: main/upgrade-to-node-22-for-capacitor-cli-compatibility-18d8c85b.md (commit)
+[2026-08-20T08:45:21.607Z] INFO  [FolderStorage] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] Markdown generated: main/upgrade-to-node-22-for-capacitor-cli-compatibility-18d8c85b.md
+[2026-08-20T08:45:21.619Z] INFO  [FolderStorage] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] Wrote 3 files, deleted 0 (Overwrite summary for 18d8c85b: Upgrade to Node 22 for Capacitor CLI compatibility)
+[2026-08-20T08:45:21.623Z] INFO  [SummaryStore] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] Summary stored successfully for commit 18d8c85b
+[2026-08-20T08:45:22.306Z] INFO  [PushExecutor] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] processPushPending(pre-push): pushed=1 failed=0
+[2026-08-20T08:45:22.306Z] INFO  [PrePushWorker] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] PrePushWorker(pre-push): drain done — pushed=1 failed=0 noMemory=0
+[2026-08-20T08:45:22.384Z] INFO  [PrePushWorker] [trace=4ffc3cca6e32afcd1144fa90a08e7e8c] PrePushWorker(pre-push): confirmed tail pass — pushed=0 failed=0 (no pending entries)
+[2026-08-20T08:45:23.928Z] INFO  [bridge] Merged mode activated {"branch":"main","creationPoint":"d84acd39","author":"shiv25354"}
